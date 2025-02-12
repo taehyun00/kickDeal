@@ -43,6 +43,7 @@ function App() {
       <p class="detail">구매내역</p>
       <br></br>
       <p class="detail">판매 내역</p>
+      <div></div>
     </div>
   );
 }
