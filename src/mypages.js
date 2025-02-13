@@ -3,6 +3,7 @@ import React from 'react';
 import logo from './images/logo.svg';
 import search from './images/search.svg';
 import back from './images/back.svg';
+
 function App() {
   
   return (
@@ -37,13 +38,25 @@ function App() {
     <option value="M">부산</option>
       </optgroup>
       </select>
+      <div class="chose">
+        <p>전체상품</p>
+        <p>축구공</p>
+        <p>축구화</p>
+        <p>풋살화</p>
+        <p>유니폼</p>
+        <p>유소년</p>
+        <p>기타용품</p>
+        <p>글올리기</p>
+        <p>마이페이지</p>
       </div>
+    </div>
+      <div class="main">
       <p class='main'>마이페이지</p>
-      <br></br>
+
       <p class="detail">구매내역</p>
-      <br></br>
+
       <p class="detail">판매 내역</p>
-      <div></div>
+      </div>
     </div>
   );
 }
