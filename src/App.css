@@ -69,15 +69,18 @@
 
 .logo{
   width: 9vw;
-  padding: 3vw;
+  position: relative;
+  top:-11.8vw;
+  left: 3vw;
+  
 }
 
 .back{
   height: 100%;
-  width: 100%;
+  width: 47.8vw;
   position: relative;
   top:-8.9vw;
-  left: 40vw;
+  left: 45vw;
 }
 .container{
   background-color: rgb(255, 255, 255);
@@ -109,8 +112,9 @@
   color: transparent;
 }
 .searchBox{
-  position: relative;
-  top: -175%;
+  position: absolute;
+  top:2.5vw;
+  left: 25%;
   width: 700px;
   align-items: center;
   display: flex;
@@ -133,9 +137,9 @@
 }
 
 .select{
-  position: relative;
-  left:29vw;
-  top:-210%;
+  position: absolute;
+  left:75vw;
+  top:2.6vw;
   width: 90px;
   height: 40px;
   border-radius: 15px;

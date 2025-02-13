@@ -14,10 +14,10 @@ function App() {
         <button class="login"> 로그인 </button>
         <button class="signup"> 회원가입 </button>
         </div>
-
+        <div>
         <img src={logo} alt="" class="logo"></img>
         <img src={back} alt="" class='back'></img>
-
+        
         <div class="searchBox">
 
           <input type="text" placeholder="상품명을 입력해주세요" class='searchInput'>
@@ -38,6 +38,8 @@ function App() {
     <option value="M">부산</option>
       </optgroup>
       </select>
+      </div>
+      </div>
       <div class="chose">
         <p>전체상품</p>
         <p>축구공</p>
@@ -49,7 +51,7 @@ function App() {
         <p>글올리기</p>
         <p>마이페이지</p>
       </div>
-    </div>
+
       <div class="main">
       <p class='main'>마이페이지</p>
 
