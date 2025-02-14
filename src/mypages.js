@@ -3,6 +3,7 @@ import React from 'react';
 import logo from './images/logo.svg';
 import search from './images/search.svg';
 import back from './images/back.svg';
+import {Link} from 'react-router-dom';
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
 
     <div className="App">
       <div class="container">
+        <div class="parent">
         <div class="log">
         <button class="login"> 로그인 </button>
         <button class="signup"> 회원가입 </button>
@@ -39,19 +41,14 @@ function App() {
       </optgroup>
       </select>
       </div>
-      </div>
-      <div class="chose">
-        <p>전체상품</p>
-        <p>축구공</p>
-        <p>축구화</p>
-        <p>풋살화</p>
-        <p>유니폼</p>
-        <p>유소년</p>
-        <p>기타용품</p>
-        <p>글올리기</p>
-        <p>마이페이지</p>
+
+
       </div>
 
+      <div class="chose">
+        <Link ></Link>
+     </div>
+    </div>
       <div class="main">
       <p class='main'>마이페이지</p>
 
