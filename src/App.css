@@ -185,7 +185,7 @@ select::-ms-expand{
   left:88%;
   margin: 10px;
   z-index: 10;
-  top:-1.5vw;
+  top:0vw;
 
 }
 
@@ -220,4 +220,8 @@ select::-ms-expand{
   height: 3vw;
 
   top:8vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+
 }
