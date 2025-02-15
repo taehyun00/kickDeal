@@ -5,7 +5,7 @@ import search from './images/search.svg';
 import back from './images/back.svg';
 import { Routes, Route, NavLink } from 'react-router-dom';
 
-
+import Index  from './pages/index';
 import Mypage  from './pages/mypages';
 import All  from './pages/all';
 import Ball  from './pages/ball';
@@ -103,6 +103,11 @@ function App() {
 
      </div>
     </div>
+
+
+    <Routes>
+        <Route path="/" element={<Index />}></Route>
+    </Routes>
     <Routes>
         <Route path="/mypages" element={<Mypage />}></Route>
     </Routes>

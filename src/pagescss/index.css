@@ -1,0 +1,75 @@
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    left: 8.5%;
+
+}
+
+.img{
+    position: absolute;
+    top:-4vw;
+    height: 25vw;
+
+
+}
+
+.dis{
+    font-size: 2vw;
+    font-family: 'Pretendard-black';
+
+    position: absolute;
+    left: 54vw;
+
+    color:#434343;
+}
+
+
+.disc{
+    font-size: 1.2vw;
+    font-family: 'Pretendard-re';
+
+    position: absolute;
+    left: 54vw;
+    top:7vw;
+
+}
+
+
+.buy{
+
+    background-color: #31A040;
+    width: 9vw;
+    height: 3vw;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    position: absolute;
+    top:12vw;
+    left:54vw;
+
+    font-family: 'GmarketSansMedium';;
+}
+
+
+@font-face {
+    font-family: 'Pretendard-black';
+    src: url('../font/Pretendard-Black.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Pretendard-re';
+    src: url('../font/Pretendard-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
