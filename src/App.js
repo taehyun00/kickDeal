@@ -3,7 +3,9 @@ import React from 'react';
 import logo from './images/logo.svg';
 import search from './images/search.svg';
 import back from './images/back.svg';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
+
+
 import Mypage  from './pages/mypages';
 import All  from './pages/all';
 import Ball  from './pages/ball';
@@ -15,7 +17,10 @@ import Upload  from './pages/upload';
 import Another  from './pages/another';
 
 function App() {
-  
+  const activeStyle = {
+    color: "#31A040",
+  };
+
   return (
     
 
@@ -27,7 +32,7 @@ function App() {
         <button class="signup"> 회원가입 </button>
         </div>
         <div>
-        <Link to="/"><img src={logo} alt="" class="logo"></img></Link>
+        <NavLink to="/"><img src={logo} alt="" class="logo"></img></NavLink>
         <img src={back} alt="" class='back'></img>
         
         <div class="searchBox">
@@ -57,39 +62,41 @@ function App() {
 
       <div class="chose">
         <p>
-        <Link to="/all">전체상품</Link>
+        <NavLink to="/all" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>전체상품</NavLink>
+        </p>
+        <div class="v-line"></div>
+        <div class="shop">
+        <p>
+        <NavLink to="/ball" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>축구공</NavLink>
         </p>
 
         <p>
-        <Link to="/ball">축구공</Link>
+        <NavLink to="/shoes" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>축구화</NavLink>
         </p>
 
         <p>
-        <Link to="/shoes">축구화</Link>
+        <NavLink to="/shoes1" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>풋살화</NavLink>
         </p>
 
         <p>
-        <Link to="/shoes1">풋살화</Link>
+        <NavLink to="/uniform" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>유니폼</NavLink>
         </p>
 
         <p>
-        <Link to="/uniform">유니폼</Link>
+        <NavLink to="/kids" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>유소년</NavLink>
         </p>
 
         <p>
-        <Link to="/kids">유소년</Link>
+        <NavLink to="/another" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>기타용품</NavLink>
+        </p>
+        </div>
+        <div class="v-line"></div>
+        <p>
+        <NavLink to="/upload" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>글올리기</NavLink>
         </p>
 
         <p>
-        <Link to="/another">기타용품</Link>
-        </p>
-
-        <p>
-        <Link to="/upload">글올리기</Link>
-        </p>
-
-        <p>
-        <Link to="/mypages">마이페이지</Link>
+        <NavLink to="/mypages" style={({ isActive }) => ({...isActive ? activeStyle : {color : "black"},textDecoration: "none"})}>마이페이지</NavLink>
         </p>
 
 
