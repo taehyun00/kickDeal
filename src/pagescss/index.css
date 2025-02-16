@@ -1,17 +1,30 @@
 .main{
     position: relative;
     height: 100%;
-    width: 100%;
-    z-index: -10;
-    left: 8.5%;
+    width: 50vw;
+
 
 }
 
 .img{
     position: absolute;
-    top:-4vw;
-    height: 25vw;
+    top:-5vw;
+    width: 70%; /* 혹은 적절한 값 */
+    height: auto;
+    left: 15vw;
+    z-index: -10;
 
+}
+
+
+
+.back{
+    position: absolute;
+    top:-10vw;
+    left: -10vw;
+
+    width: 110vw;
+    height: auto;
 
 }
 
@@ -20,19 +33,24 @@
     font-family: 'Pretendard-black';
 
     position: absolute;
-    left: 54vw;
+    left: 60vw;
+    top:-3vw;
+    width: 19vw;
 
     color:#434343;
+    z-index: -10;
 }
-
 
 .disc{
     font-size: 1.2vw;
     font-family: 'Pretendard-re';
 
     position: absolute;
-    left: 54vw;
-    top:7vw;
+    left: 60vw;
+    top:3vw;
+
+    width: 19vw;
+    z-index: -10;
 
 }
 
@@ -46,10 +64,30 @@
     border-radius: 25px;
     color:white;
     position: absolute;
-    top:12vw;
-    left:54vw;
+    top:8vw;
+    left:60vw;
 
-    font-family: 'GmarketSansMedium';;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+    font-size: 1vw;
+
+    font-family: 'GmarketSansMedium';
+    
+    transition: all 0.5s;
+
+    z-index: -10;
+}
+
+.buy:hover{
+
+    background-color: #ffffff;
+
+    border: 0.5px solid #31A040 ;
+
+    color: #31A040;
+
 }
 
 

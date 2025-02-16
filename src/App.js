@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'; 
 import logo from './images/logo.svg';
 import search from './images/search.svg';
-import back from './images/back.svg';
+
 import { Routes, Route, NavLink } from 'react-router-dom';
 
 import Index  from './pages/index';
@@ -33,7 +33,7 @@ function App() {
         </div>
         <div>
         <NavLink to="/"><img src={logo} alt="" class="logo"></img></NavLink>
-        <img src={back} alt="" class='back'></img>
+       
         
         <div class="searchBox">
 
