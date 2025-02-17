@@ -15,6 +15,8 @@ import Shoes1  from './pages/shoes1';
 import Uniform  from './pages/uniform';
 import Upload  from './pages/upload';
 import Another  from './pages/another';
+import Signup from './pages/signup';
+
 
 function App() {
   const activeStyle = {
@@ -29,7 +31,7 @@ function App() {
         <div class="parent">
         <div class="log">
         <button class="login"> 로그인 </button>
-        <button class="signup"> 회원가입 </button>
+        <NavLink to="/signup"><button class="signup"> 회원가입 </button></NavLink>
         </div>
         <div>
         <NavLink to="/"><img src={logo} alt="" class="logo"></img></NavLink>
@@ -142,6 +144,10 @@ function App() {
 
     <Routes>
         <Route path="/upload" element={<Upload />}></Route>
+    </Routes>
+
+    <Routes>
+        <Route path="/signup" element={<Signup />}></Route>
     </Routes>
 
     </div>

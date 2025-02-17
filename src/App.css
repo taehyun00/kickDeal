@@ -210,6 +210,16 @@ select::-ms-expand{
 }
 
 
+.signup:hover{
+  cursor: pointer;
+  
+}
+
+.login:hover{
+  cursor: pointer;
+  
+}
+
 
 .main{
   position: relative;
