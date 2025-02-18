@@ -12,13 +12,13 @@ function Signup() {
             <div className='i' >
                 <input type="text" required></input>
                 <label>이름</label>
-                <span></span>
+                <span className='spans'></span>
             </div>
 
             <div  className='i'>
                 <input type="text" required></input>
                 <label>생년월일</label>
-                <span></span>
+                <span className='spans'></span>
             </div>
 
         </div>

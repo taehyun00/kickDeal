@@ -40,7 +40,7 @@
     gap: 2vw;
 }
 
-  span {
+  .spans {
     display: block;
     position: absolute;
     bottom: 0;
