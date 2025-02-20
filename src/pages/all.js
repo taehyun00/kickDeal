@@ -2,7 +2,7 @@ import '../pagescss/all.css';
 import React from 'react'; 
 
 
-function Mypage() {
+function All() {
   
   return (
       <div class="main">
@@ -14,4 +14,4 @@ function Mypage() {
   );
 }
 
-export default Mypage;
+export default All;
