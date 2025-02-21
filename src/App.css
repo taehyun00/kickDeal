@@ -96,7 +96,7 @@
   height: 8vw;
   width: 100%;
   border-bottom: 1px solid #434343;
-  z-index: 0;
+  z-index: 100;
   position: fixed;
   
 }

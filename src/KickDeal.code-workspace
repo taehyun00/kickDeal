@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "KickDeal",
+			"path": "../../../KickDeal"
+		},
+		{
+			"name": "node_modules",
+			"path": "../node_modules"
+		},
+		{
+			"name": "src",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "images"
+		},
+		{
+			"name": "font",
+			"path": "font"
+		},
+		{
+			"name": "public",
+			"path": "../public"
+		}
+	],
+	"settings": {}
+}
