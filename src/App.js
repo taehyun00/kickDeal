@@ -15,7 +15,7 @@ import Shoes1  from './pages/shoes1';
 import Uniform  from './pages/uniform';
 import Upload  from './pages/upload';
 import Another  from './pages/another';
-import Signup from './pages/signup';
+import Signup from './pages/signup.jsx';
 
 
 function App() {

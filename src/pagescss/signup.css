@@ -48,7 +48,7 @@
 }
 .divW{
   padding-left:2vw;
-  margin-top: 40px;
+  margin-top: 10px;
   font-size: 1vw;
 }
 .fin{
@@ -73,7 +73,7 @@
 .bt{
   position: absolute;
 
-  top:30vw;
+  top:31vw;
   left: 35%;
   width: 8vw;
   height: 10vw;
