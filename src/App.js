@@ -15,8 +15,8 @@ import Shoes1  from './pages/shoes1';
 import Uniform  from './pages/uniform';
 import Upload  from './pages/upload';
 import Another  from './pages/another';
-import Signup from './pages/signup.jsx';
-
+import Join from './pages/join';
+import  Email from './pages/email';
 
 function App() {
   const activeStyle = {
@@ -31,7 +31,7 @@ function App() {
         <div class="parent">
         <div class="log">
         <button class="login"> 로그인 </button>
-        <NavLink to="/signup"><button class="signup"> 회원가입 </button></NavLink>
+        <NavLink to="/join"><button class="signup"> 회원가입 </button></NavLink>
         </div>
         <div>
         <NavLink to="/"><img src={logo} alt="" class="logo"></img></NavLink>
@@ -109,45 +109,28 @@ function App() {
 
     <Routes>
         <Route path="/" element={<Index />}></Route>
-    </Routes>
-    <Routes>
+
         <Route path="/mypages" element={<Mypage />}></Route>
-    </Routes>
-
-    <Routes>
+ 
+        <Route path="/email" element={<Email />}></Route>
+   
         <Route path="/all" element={<All />}></Route>
-    </Routes>
 
-    <Routes>
         <Route path="/ball" element={<Ball />}></Route>
-    </Routes>
-
-    <Routes>
+   
         <Route path="/shoes" element={<Shoes />}></Route>
-    </Routes>
-
-    <Routes>
+   
         <Route path="/shoes1" element={<Shoes1 />}></Route>
-    </Routes>
 
-    <Routes>
         <Route path="/kids" element={<Kids />}></Route>
-    </Routes>
-
-    <Routes>
+  
         <Route path="/another" element={<Another />}></Route>
-    </Routes>
 
-    <Routes>
         <Route path="/uniform" element={<Uniform />}></Route>
-    </Routes>
-
-    <Routes>
+ 
         <Route path="/upload" element={<Upload />}></Route>
-    </Routes>
-
-    <Routes>
-        <Route path="/signup" element={<Signup />}></Route>
+  
+        <Route path="/join" element={<Join />}></Route>
     </Routes>
 
     </div>

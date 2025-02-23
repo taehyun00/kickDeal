@@ -3,26 +3,24 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-export default function Signup() {
+export default function Join() {
 
-  const [email,setEmail] = useState("");
-  const [Name,setName] = useState("");
+  const [Email,setEmail] = useState("");
   const [Password,setPw] = useState("");
   const [Id,setId] = useState("");
   
-  const{replace} = useNavigate();
+  const  navigate  = useNavigate();
 
-  const register = () =>{
-    axios
-  .post('https://localhost:1337/api/auth/local/register',{
+  const register = async() =>{
+    await axios.post('https://port-0-kickdeal2-m1qhzohka7273c65.sel4.cloudtype.app/join',{
     id : Id,
     password : Password,
-    name : Name
   })
+
   .then((response)=>{
       console.log('well done!');
       localStorage.setItem('token', response.data.jwt);
-      replace("/");
+      navigate('/email', { state :{ email: Email }});
   })
   }
 
@@ -34,7 +32,7 @@ export default function Signup() {
           <div className='realforms'>
             <div className='divW'>이름</div>
               <div className='fi'>
-                <input  className='fin' placeholder='홍길동' value={Name} onChange={(event)=>{setName(event.target.value)}}/>
+                <input  className='fin' placeholder='홍길동'/>
               </div>
 
 
@@ -47,7 +45,7 @@ export default function Signup() {
             
             <div className='divW'>이메일</div>
               <div className='fi'>
-                <input  className='fin' placeholder='tes1234@gmail.com' value={email} onChange={(event)=> 
+                <input  className='fin' placeholder='tes1234@gmail.com' value={Email} onChange={(event)=> 
                   {setEmail(event.target.value);
                   }}/>
               </div> 
