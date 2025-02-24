@@ -17,6 +17,7 @@ import Upload  from './pages/upload';
 import Another  from './pages/another';
 import Join from './pages/join';
 import  Email from './pages/email';
+import Login from './pages/login';
 
 function App() {
   const activeStyle = {
@@ -30,7 +31,7 @@ function App() {
       <div class="container">
         <div class="parent">
         <div class="log">
-        <button class="login"> 로그인 </button>
+        <NavLink to="/login"><button class="login"> 로그인 </button></NavLink>
         <NavLink to="/join"><button class="signup"> 회원가입 </button></NavLink>
         </div>
         <div>
@@ -131,6 +132,8 @@ function App() {
         <Route path="/upload" element={<Upload />}></Route>
   
         <Route path="/join" element={<Join />}></Route>
+
+        <Route path="/login" element={<Login />}></Route>
     </Routes>
 
     </div>

@@ -35,14 +35,6 @@ export default function Join() {
                 <input  className='fin' placeholder='홍길동'/>
               </div>
 
-
-
-
-            <div className='divW'>생년월일</div>
-              <div className='fi'>
-                <input  className='fin' placeholder='2000.11.17'/>
-              </div>
-            
             <div className='divW'>이메일</div>
               <div className='fi'>
                 <input  className='fin' placeholder='tes1234@gmail.com' value={Email} onChange={(event)=> 
