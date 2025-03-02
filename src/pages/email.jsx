@@ -21,7 +21,7 @@ export default function Email() {
         email : state.email
     })
     .then((response)=>{
-        setNum(response.data);
+        setNum(response.data.code);
 
     })
 }
