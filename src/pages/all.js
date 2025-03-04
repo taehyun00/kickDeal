@@ -7,7 +7,10 @@ function All() {
   return (
       <div class="main">
         <p>
-            전체상품입니다
+          <div>
+          전체상품입니다
+          </div>
+            
         </p>
       </div>
 
