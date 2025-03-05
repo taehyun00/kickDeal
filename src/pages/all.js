@@ -1,14 +1,26 @@
+import axios from 'axios';
 import '../pagescss/all.css';
 import React from 'react'; 
 
 
 function All() {
+
+  function islogin(){
+    axios
+      .post('이건우이새기야',null,{
+        headers:{
+          Authorization : `${localStorage.getItem("accessToken")}`,
+        },
+      })
+      .then((res)=> console.log(res))
+      .catch((err)=> console.log(err)) 
+  }
   
   return (
-      <div class="main">
+      <div className="main">
         <p>
           <div>
-          전체상품입니다
+            <button onClick={islogin}>등록</button>
           </div>
             
         </p>
