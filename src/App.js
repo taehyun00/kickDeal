@@ -21,6 +21,7 @@ import Login from './pages/login';
 
 function App() {
   const activeStyle = {
+    
     color: "#31A040",
   };
 
@@ -32,7 +33,7 @@ function App() {
         <div class="parent">
         <div class="log">
         <NavLink to="/login"><button class="login"> 로그인 </button></NavLink>
-        <NavLink to="/join"><button class="signup"> 회원가입 </button></NavLink>
+        <NavLink to="/join"><button class="signup"> 회원가입 </button></NavLink> 
         </div>
         <div>
         <NavLink to="/"><img src={logo} alt="" class="logo"></img></NavLink>
